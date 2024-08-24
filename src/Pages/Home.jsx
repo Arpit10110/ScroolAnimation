@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import "../Style/Home.css";
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import val from "../frames/frame_0318.jpg"
 gsap.registerPlugin(ScrollTrigger);
 const Home = () => {
   const canvasRef = useRef(null);
@@ -87,6 +88,7 @@ const Home = () => {
 
   return (
     <>
+    <img src={val} alt="val" />
       <div className="main">
         <div className="section1">
           <div className="upperSticky">
