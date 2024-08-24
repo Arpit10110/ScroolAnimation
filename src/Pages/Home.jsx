@@ -3,7 +3,6 @@ import "../Style/Home.css";
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
-
 const Home = () => {
   const canvasRef = useRef(null);
   const imageCollection = [];
@@ -11,12 +10,13 @@ const Home = () => {
   
   const imagesDetails = {
     currentIndex: 1,
-    lastIndex: 990,
+    lastIndex: 481,
   };
 
   const uploading = () => {
     for (let i = 1; i <= imagesDetails.lastIndex; i++) {
-      const imgUrl = `/src/frames/frame_${i.toString().padStart(4, "0")}.jpg`;
+      const imgUrl = `/frames/frame_${i.toString().padStart(4, "0")}.jpg`;
+      console.log(imgUrl);
       const image = new Image();
       image.src = imgUrl;
       image.onload = () => {
