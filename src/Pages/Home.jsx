@@ -5,6 +5,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import val from "../assets/frame_0371.jpg"
 gsap.registerPlugin(ScrollTrigger);
 const Home = () => {
+  const val2= "/assets/frame_0372.jpg"
   const canvasRef = useRef(null);
   const imageCollection = [];
   let countLoad = 1;
@@ -89,6 +90,7 @@ const Home = () => {
   return (
     <>
     <img src={val} alt="val" />
+    <img src={val2} alt="val" />
       <div className="main">
         <div className="section1">
           <div className="upperSticky">
